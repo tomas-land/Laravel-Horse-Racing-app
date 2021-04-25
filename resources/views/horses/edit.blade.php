@@ -18,7 +18,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Dalyvauta: </label>
-                                <input type="text" name="runs" value="{{ $horse->runs }}" class="form-control">
+                                <input type="number" name="runs" value="{{ $horse->runs }}" class="form-control">
                                 @error('runs')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror

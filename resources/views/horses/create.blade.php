@@ -17,15 +17,15 @@
                             </div>
                             <div class="form-group">
                                 <label>Laimetos: </label>
-                                <input type="text" name="runs" class="form-control">
-                                @error('runs')
+                                <input type="number" name="runs" class="form-control">
+                                @error('wins')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="form-group">
                                 <label>Dalyvautos: </label>
                                 <input type="number" name="wins" class="form-control">
-                                @error('wins')
+                                @error('runs')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>

@@ -68,9 +68,9 @@ class BetterController extends Controller
      * @param  \App\Models\Better  $better
      * @return \Illuminate\Http\Response
      */
-    public function show(Better $better)
+    public function show($id)
     {
-        //
+        return view('betters.info', ['better' => Better::find($id)]);
     }
 
     /**

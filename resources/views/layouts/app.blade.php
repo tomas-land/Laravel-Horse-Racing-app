@@ -19,12 +19,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d319a02d70.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light custom-nav-color shadow-sm ">
+            <div class="container ">
                 <a class="navbar-brand" href="{{ route('/home') }}">
                     {{ config('app.name', 'Laravel') }}Racing
                 </a>
@@ -91,10 +92,18 @@
             </div>
         </nav>
 
-        <main class="container">
+        <main class="container container-color">
+           <div class="img-horse"></div> 
             @yield('content')
         </main>
+        
     </div>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+        selector: '#mce'
+        });
+        </script>
 </body>
 
 </html>

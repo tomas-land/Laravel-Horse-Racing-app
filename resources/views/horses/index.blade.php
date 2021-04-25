@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
     
+
+
+@if($errors->any())
+<h4 style="color: red">{{$errors->first()}}</h4>
+@endif
 @if (session('status_success'))
 <div class="alert ">
     <p style="color: green"><b>{{ session('status_success') }}</b></p>
@@ -24,7 +29,7 @@
     <td>{{ $horse->name }}</td>
     <td>{{ $horse->runs }}</td>
     <td>{{ $horse->wins }}</td>
-    <td>{{ $horse->about }}</td>
+    <td>{!! $horse->about !!}</td>
     <td>
         <form action={{ route('horses.destroy', $horse->id) }} method="POST">
         <a class="btn btn-success" href={{ route('horses.edit', $horse->id) }}>Redaguoti</a>
@@ -32,7 +37,6 @@
         <input type="submit" class="btn btn-danger" value="Trinti"/>
         </form>
         </td>
-       
     </tr>
     @endforeach
     </table>

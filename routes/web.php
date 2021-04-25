@@ -17,7 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+
+Route::middleware(['auth'])->group(function(){
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('/home');
 Route::resource('betters', App\Http\Controllers\BetterController::class);
 Route::resource('horses', App\Http\Controllers\HorseController::class);
+});

@@ -108,6 +108,10 @@ class HorseController extends Controller
      */
     public function destroy(Horse $horse)
     {
+        if (count($horse->betters)){
+            return back()->withErrors(['error' => ['Can\'t delete horse with betters assigned, please unassign betters first!']]);
+            }
+
         $horse->delete();
         return redirect()->route('horses.index');
     }

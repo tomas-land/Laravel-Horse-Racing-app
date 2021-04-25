@@ -12,7 +12,7 @@
 @endif
     <div class="card-body">
         <table class="table">
-            <tr>
+            <tr class="bg-blue">
                 <th>Vardas</th>
                 <th>Pavarde</th>
                 <th>Statoma suma(eur)</th>
@@ -21,27 +21,33 @@
             </tr>
             @foreach ($betters as $better)
                 <tr>
-                    <td>{{ $better->name }}</td>
+                    <td>{{ $better->name }}
+                     <br>  <p style="font-size: 10px"> <a href="{{ route('betters.show', $better['id']) }}">View details</a></p></td>
                     <td>{{ $better->surname }}</td>
                     <td>{{ $better->bet }}</td>
                     <td>{{ $better->horse['name'] }}</td>
                     <td>
                         <form action={{ route('betters.destroy', $better->id) }} method="POST">
-                            <a class="btn btn-success" href={{ route('betters.edit', $better->id) }}>Redaguoti</a>
+                            <a class="btn btn-success" href={{ route('betters.edit', $better->id) }}><i class="fas fa-edit"></i> Redaguoti</a>
                             @csrf @method('delete')
-                            <input type="submit" class="btn btn-danger" value="Trinti" />
+                            <button type="submit" class="btn btn-danger" value=""><i class="fas fa-trash"></i> Trinti</button>
                         </form>
                     </td>
 
                 </tr>
             @endforeach
+            <p style="font-size: 10px">Betters counted: {{ count($betters) }}
+            | <a href="{{ route('betters.show', $better['id']) }}">View post details and comment on it</a>
+        </p>
         </table>
+        {{-- Betters count --}}
+        
         <div>
             <a href="{{ route('betters.create') }}" class="btn btn-success">Pridėti</a>
         </div>
     </div>
 
-
+  
 
 
     <div class="card-body">
