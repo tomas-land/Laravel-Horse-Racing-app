@@ -25,18 +25,13 @@ Basic web app developed with Laravel framework.
     -   run if composer is installed on your system globally  <pre>php composer.phar install</pre>
 -   Run <pre>php artisan key:generate</pre>
 -   Run migrations to create tables<pre>php artisan migrate</pre> 
--   Fill tables with data <pre>php artisan db:seed</pre>
+-   Fill tables with dummy data <pre>php artisan db:seed</pre>
 -   Follow the link that appears in the terminal after running <pre>php artisan serve</pre>
 
 
 ## Screenshots
 
-<img width="829" alt="1" src="https://user-images.githubusercontent.com/74532995/115245657-d8554800-a12d-11eb-8442-0eab7f7b4ae2.png">
-<br>
-<img width="850" alt="3" src="https://user-images.githubusercontent.com/74532995/115245691-e2774680-a12d-11eb-97a3-c642a1cfc5f6.png">
-<br>
-
-![alt text](screenshots/1.jpg "Description goes here")
+![1](https://user-images.githubusercontent.com/72792707/115993224-910e0200-a5da-11eb-95ee-ea3ba80948fc.JPG)
 
 ## Author:
 
