@@ -9,9 +9,9 @@ Basic web app developed with Laravel framework.
 
 ## Project features
 
--Guest page for review
--Admin page with authentication
--CRUD operations in Admin page
+- Guest page for review
+- Admin page with authentication
+- CRUD operations in Admin page
 
 ## Launch instructions:
 
@@ -21,8 +21,8 @@ Basic web app developed with Laravel framework.
 -   Create a new schema(database) in you MySQL server.
 -   Rename **'.env.example'** file to **'.env'** inside of the project's root directory and configure the database information.
 -   Using GitBash, CMD or other terminal in your code editor:
-    -   if composer is installed locally: run <pre>php <'path to composer.phar file location'>/composer.phar install</pre>
-    -   if composer is installed on your system globally: run  <pre>php composer.phar install</pre>
+    -   run if composer is installed locally <pre>php <'path to composer.phar file location'>/composer.phar install</pre>
+    -   run if composer is installed on your system globally  <pre>php composer.phar install</pre>
 -   Run <pre>php artisan key:generate</pre>
 -   Run migrations to create tables<pre>php artisan migrate</pre> 
 -   Fill tables with data <pre>php artisan db:seed</pre>
@@ -36,7 +36,7 @@ Basic web app developed with Laravel framework.
 <img width="850" alt="3" src="https://user-images.githubusercontent.com/74532995/115245691-e2774680-a12d-11eb-97a3-c642a1cfc5f6.png">
 <br>
 
-![alt text](screenshots/1.png "Description goes here")
+![alt text](screenshots/1.jpg "Description goes here")
 
 ## Author:
 
