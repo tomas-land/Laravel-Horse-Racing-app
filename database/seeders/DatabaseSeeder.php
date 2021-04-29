@@ -2,8 +2,11 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 
+namespace Database\Seeders;
+use Illuminate\Support\Facades\Hash;
+ use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Seeder;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -11,5 +14,9 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    
+    public function run(){
+
+       
 }
+    }
+    

@@ -1,8 +1,9 @@
 <?php
 
 namespace Database\Seeders;
+
 use Illuminate\Support\Facades\Hash;
- use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -12,12 +13,18 @@ class UserSeeder extends Seeder
      *
      * @return void
      */
-    public function run(){
+    public function run()
+    {
         DB::table('users')->insert([
-        'name' => 'Mindaugas',
-        'email' => 'mindaugas@gmail.com',
-        'password' => Hash::make('mindaugas'),
+            'name' => 'Mindaugas',
+            'email' => 'mindaugas@gmail.com',
+            'password' => Hash::make('mindaugas'),
         ]);
-       
-}
+
+        DB::table('users')->insert([
+            'name' => 'Tomas',
+            'email' => 'tomaslanda1989@gmail.com',
+            'password' => Hash::make('123456789'),
+        ]);
+    }
 }

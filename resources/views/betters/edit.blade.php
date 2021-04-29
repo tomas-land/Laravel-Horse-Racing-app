@@ -8,7 +8,7 @@
                     <div class="card-body">
                         <form action="{{ route('betters.update', $better->id) }}" method="POST">
                             @csrf
-                            @csrf @method("PUT")
+                            @method("PUT")
                             <div class="form-group">
                                 <label>Vardas: </label>
                                 <input type="text" name="name" value="{{ $better->name }}" class="form-control">
