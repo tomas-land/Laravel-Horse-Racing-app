@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-/* @charset "UTF-8"; */
+@charset "UTF-8";
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10956,8 +10956,9 @@ body table td {
 }
 
 body .custom-nav-color {
-  background-color: #092544;
+  background-color: #84a4c9;
   color: #56728d;
+  margin-bottom: 2rem;
 }
 
 body .container-color {
@@ -10977,12 +10978,16 @@ body .img-horse {
   border-radius: 20px;
 }
 
+body .navbar-light .navbar-brand {
+  color: rgba(216, 38, 38, 0.9);
+}
+
 body ul li a {
   color: aqua;
 }
 
 body a {
-  color: fuchsia;
+  color: #38c172;
 }
 
 

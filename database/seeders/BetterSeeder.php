@@ -16,21 +16,21 @@ class BetterSeeder extends Seeder
     {
         DB::table('betters')->insert([
             'name' => 'Mindaugas',
-            'surname' => 'Landa',
+            'surname' => 'Minda',
             'bet' => '100',
             'horse_id' => '1'
         ]);
 
         DB::table('betters')->insert([
             'name' => 'Linas',
-            'surname' => 'Landa',
+            'surname' => 'Linaitis',
             'bet' => '300',
             'horse_id' => '2'
         ]);
         
         DB::table('betters')->insert([
             'name' => 'Marius',
-            'surname' => 'Landa',
+            'surname' => 'Mariukas',
             'bet' => '200',
             'horse_id' => '3'
         ]);

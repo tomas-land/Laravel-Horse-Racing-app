@@ -9,33 +9,38 @@
 
 
 
-  body{
+body {
 
-      color: #7d98b1;
-      background-color: #275785;
-      table{
-          
-          th{
+    color: #7d98b1;
+    background-color: #275785;
+
+    table {
+
+        th {
             color: #dae4ee;
         }
-        td{
+
+        td {
             color: #7d9bb8;
         }
-      }
-        
-      .custom-nav-color{
-        background-color: #092544;
+    }
+
+    .custom-nav-color {
+        background-color: #84a4c9;
         color: #56728d;
-        
-      }
-      .container-color {
+        margin-bottom: 2rem;
+
+    }
+
+    .container-color {
         padding-top: 20px;
         background-color: #104474;
         border-radius: 20px;
         color: #7d98b1;
-      }
-      .img-horse{
-        
+    }
+
+    .img-horse {
+
         background-image: url('c4c70ccb-0b83-4a00-b446-0bfe0ec354c8.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -43,19 +48,27 @@
         height: 280px;
         position: relative;
         border-radius: 20px;
-      }
-   
-     ul{
-         li{
-             a{color: aqua;} 
-  
-         }
-        }
-  
-      a{
-          color: fuchsia;
-      }
-  
-  
-  
     }
+
+    .navbar-light .navbar-brand {
+        color: rgb(216 38 38 / 90%);
+    }
+
+    ul {
+        li {
+            a {
+                color: aqua;
+            }
+
+        }
+    }
+
+    a {
+      color: rgb(56 193 114);
+    }
+
+
+
+}
+
+

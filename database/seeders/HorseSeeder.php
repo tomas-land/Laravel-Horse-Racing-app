@@ -19,7 +19,7 @@ class HorseSeeder extends Seeder
             'name' => 'Kronas',
             'runs' => '10',
             'wins' => '8',
-            'about' => 'nice'
+            'about' => 'slow'
         ]);
 
         DB::table('horses')->insert([

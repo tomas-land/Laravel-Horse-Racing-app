@@ -1,5 +1,3 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 
 # CRUD Horse Race manager app
 
@@ -12,6 +10,8 @@ Basic web app developed with Laravel framework.
 - Guest page for review
 - Admin page with authentication
 - CRUD operations in Admin page
+- Filter bettors by horse name
+- WYSIWYG editor
 
 ## Launch instructions:
 
